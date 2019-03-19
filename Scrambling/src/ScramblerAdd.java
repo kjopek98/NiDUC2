@@ -2,7 +2,7 @@ public class ScramblerAdd {
     public ScramblerAdd() {
     }
 
-    public int[] tab(int[] inputBits, int[] initialState) {
+    public int[] scramblingAdd(int[] inputBits, int[] initialState) {
         int[] outputBits = new int[inputBits.length];
 
         for(int n = 0; n < inputBits.length; ++n) {
@@ -16,7 +16,7 @@ public class ScramblerAdd {
         return outputBits;
     }
 
-    public int[] circshift(int[] states) {
+    public static int[] circshift(int[] states) {
         int a = states[states.length - 1];
         int[] tab = new int[states.length];
 
